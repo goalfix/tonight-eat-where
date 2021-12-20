@@ -1,0 +1,7 @@
+environ
+pytelegrambotapi
+telebot
+psycopg2
+BeautifulSoup
+requests
+selenium
