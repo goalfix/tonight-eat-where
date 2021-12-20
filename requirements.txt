@@ -1,7 +1,5 @@
-environ
+python-dotenv
 pytelegrambotapi
-telebot
 psycopg2
-BeautifulSoup
+bs4
 requests
-selenium
