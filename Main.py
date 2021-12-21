@@ -5,23 +5,16 @@ import psycopg2
 import random
 from dotenv import load_dotenv
 
-#Initialise sensitive info (stored in .env file)
+#Initialise sensitive info (Store either in .env file or config file)
 load_dotenv()
 
-API_KEY = os.getenv('API_KEY')
-DATABASE = os.getenv('DATABASE')
-DB_USER = os.getenv('DB_USER')
-PASSWORD = os.getenv('PASSWORD')
-HOST = os.getenv('HOST')
-PORT = os.getenv('PORT')
-print(API_KEY, DATABASE, DB_USER, PASSWORD, HOST, PORT)
+API_KEY = os.environ['API_KEY']
+DATABASE_URL = os.environ['DATABASE_URL']
 
 #Connect to postgresql (heroku for production, local for development)
-conn = psycopg2.connect(
-    database=DATABASE, user=DB_USER, password=PASSWORD, host=HOST, port= PORT
-)
-
+conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 cursor = conn.cursor()
+
 bot = telebot.TeleBot(API_KEY)
 
 # List of mrt stations that bot is able to query
