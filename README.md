@@ -1,9 +1,9 @@
-# tonighteatwhere
+# tonight-eat-where
 Unsure of what to eat tonight in Singapore? This bot can help you find food locations depending on your location and food budget. 
 You can try it out on telegram at: [Try the bot!](https://t.me/tonighteatwhere_bot)
 
 ## Disclaimer
-Webscraping done for educational and project purposes only. By no means have I tried to profit off data scraped, or attempted to destablise the original websites for personal gain. All content belongs to respective owners of website.
+Webscraping done for educational and project purposes only. By no means have I tried to profit off data scraped (which is commonly available data on google, such as phone number/location/operating hours of restaurants), or attempted to destablise the original websites for personal gain. All content belongs to respective owners of website, and I have linked the original websites when providing search results to improve traffic. If you are the owner of the websites, feel free to contact me to update your terms and conditions of your website!
 
 ## How to use
 To start the bot, you can run the `/start` command.
